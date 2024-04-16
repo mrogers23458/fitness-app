@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import background from "./images/landing_bg.webp";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <header className="app-header">Header Content Goes Here</header>
+      <div class="heading-content">
+        <div class="login-content-container-left">
+          <p class="landing-text">"Some small quote will go here"</p>
+        </div>
+        <div class="login-content-container-right">some content</div>
+      </div>
+      <img class="main-bg-img" src={background} alt="fitness_background" />
     </div>
   );
 }
